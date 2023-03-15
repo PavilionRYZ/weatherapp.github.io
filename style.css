@@ -15,7 +15,6 @@
  animation: gradient 15s ease infinite;
  background-size: 400% 400%;
  overflow-x: hidden;
- overflow-y: hidden;
 }
 /* bg-animation  */
 @keyframes gradient {
@@ -362,21 +361,17 @@ h1{
 
  /* tab-container media  */
  @media (max-width:767px){
-  .bg-img{
-    display: none;
-  }
-  .bg-img2{
-    display: none;
-  }
-  .bg-img3{
-    display: block;
+  .header{
+    font-size: 1rem;
+    width:200px;
   }
   .tab-container{
-    width: 90%;
+    width: 80%;
     height: auto;
+    gap: 2rem;
   }
   .tab{
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .parameter-container{
     padding-bottom: 3rem;
@@ -386,30 +381,4 @@ h1{
     padding-bottom: .8rem;
   }
  }
- @media (max-width:1060px){
-  .header{
-    font-size: 1.5rem;
-  }
-  .tab-container{
-    width: 100%;
-    height: auto;
-  }
-  .tab{
-    font-size: 1.4rem;
-  }
-  .parameter-container{
-    padding-bottom: 5rem;
-  }
-  .parameter{
-    width: 150px;
-    padding-bottom: 1rem;
-  }
- }
- @media (max-width:1800px){
-  .bg-img{
-    display: none;
-  }
-  .bg-img2{
-    display: block;
-  }
- }
+
