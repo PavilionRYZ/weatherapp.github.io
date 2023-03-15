@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="wrapper"> <!--  wrapper container  -->
+    <img class="bg-img" src="./assets/Green Professional Forest YouTube Thumbnail.png" alt="">
+    <img class="bg-img2" src="./assets/mdscr.png" alt="">
+    <img class="bg-img3" src="./assets/smsrc.png" alt="">
+
+    <div id="container"> <!-- container  -->
+      
+      <h1 class="header">Weather App</h1>
+
+      <div class="tab-container"><!--  tab container  -->
+          
+        <p class="tab" data-userWeather>Your Weather</p>
+        <p class="tab" data-searchWeather>Searach Weather</p>
+         
+      </div><!--  tab container  -->
+
+      <div class="weather-container"><!--  weather container  -->
+               
+         <div class="sub-container grant-location-container"><!-- grant location container  -->
+                <img src="./assets/location logo.png" width="180" height="180" loading="lazy" alt="">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Info</p>
+                <button class="btn" data-grantAccess>Grant Location</button>
+            </div><!--  grant location container  -->
+                 
+            <!-- search form  -->
+                 <form action="" class="form-container" data-searchForm>
+                       <input type="text" placeholder="search for city..............." name="" id="" data-searchInput>
+                       <button class="form-container-btn" type="submit"><i class="fa fa-search"></i></button>
+                 </form>
+                 <!-- loading screen container  -->
+                 <div class="sub-container loading-container">
+                    <!-- <img src="./assets/Loading Graphic .mp4" alt="" srcset=""> -->
+                    <div class="middle">
+                      <div class="bar bar1"></div>
+                      <div class="bar bar2"></div>
+                      <div class="bar bar3"></div>
+                      <div class="bar bar4"></div>
+                      <div class="bar bar5"></div>
+                      <div class="bar bar6"></div>
+                      <div class="bar bar7"></div>
+                      <div class="bar bar8"></div>
+                    </div>
+                    <p>loading</p>
+                 </div>  
+                 <!-- loading screen container  -->
+             <!-- show weather info  -->
+             <div class="sub-container user-info-container">
+              <!-- SHOW city name and flag -->
+              <div class="name">
+                <p data-cityName></p>
+                <img data-countryIcon src="" alt="">
+              </div>
+              <!-- weather description -->
+              <p data-weatherDesc></p>
+              <div class="weatherIcon-div">
+                <img data-weatherIcon id="weatherIcon" alt="">
+              </div>
+           <!-- temperature -->
+              <p data-temp></p>
+
+
+              <!-- 3 cards parameter  -->
+              <div class="parameter-container">
+              <!-- 1st card  -->
+                 <div class="parameter">
+                  <img class="parameter-img" src="./assets/windlogog.png" alt="" >
+                  <p>windspees</p>
+                  <p data-windspeed></p>
+                 </div> <!-- 1st card  -->
+              <!-- 2nd card  -->
+              <div class="parameter">
+                <img class="parameter-img" src="./assets/humiditylogo.png" alt="" >
+                <p>humidity</p>
+                <p data-humidity></p>
+               </div> <!-- 2nd card  -->
+               <!-- 3rdcard  -->
+               <div class="parameter">
+                <img class="parameter-img" src="./assets/CloudLogo.png" alt="" >
+                <p>cloud</p>
+                <p data-cloudiness></p>
+               </div> <!-- 3rd card  -->
+
+               </div><!-- 3 cards parameter  -->
+             </div>
+
+        </div><!--  weather container  -->
+      </div>  <!--container  -->
+    </div><!--  wrapper container  -->
+
+    <script src="https://kit.fontawesome.com/6cf2338f11.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
