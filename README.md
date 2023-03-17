@@ -7,8 +7,11 @@ This is a simple web application that displays the weather information for a spe
 Features{📍}
 
 📌Displays the current temperature, weather condition, and location.
+
 📌Displays weather forecast for the selected location.
+
 📌Allows the user to search for the weather information of a specific location.
+
 📌Uses the OpenWeatherMap API to fetch weather data.
 
 Getting Started{📍}
